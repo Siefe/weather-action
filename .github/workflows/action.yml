@@ -1,9 +1,9 @@
-name: 'GitHub Actions Weather Bot'
+name: 'GitHub Actions Cron'
 
 on:
   push:
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '40 11 * * *'
 
 jobs:
   bot:
@@ -12,4 +12,4 @@ jobs:
       - name: 'Checkout codes'
         uses: actions/checkout@v1
       - name: 'Get Weather'
-        run: bash ./weather.sh
+        run: bash ./corn.sh
